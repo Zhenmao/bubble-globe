@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Globe</title>
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=noto-sans-mono:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div id="bubbleGlobe"></div>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          Population data from
+          <a
+            href="https://databank.worldbank.org/indicator/NY.GDP.PCAP.CD/1ff4a498/Popular-Indicators"
+            target="_blank"
+            >World Bank World Development Indicators</a
+          >
+        </li>
+        <li>
+          Globe rotation implementation from
+          <a href="https://observablehq.com/@d3/versor-zooming" target="_blank"
+            >Versor Zooming</a
+          >
+        </li>
+        <li
+          >Globe style from
+          <a
+            href="https://observablehq.com/@benoldenburg/simple-globe"
+            target="_blank"
+            >Simple Globe</a
+          ></li
+        >
+        <li
+          >Bubbles placement using polylabel
+          <a
+            href="https://observablehq.com/@washpostgraphics/spike-globe"
+            target="_blank"
+            >Spike Globe</a
+          ></li
+        >
+      </ul>
+    </footer>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <script src="https://unpkg.com/versor"></script>
+    <script src="https://bundle.run/polylabel@1.1.0"></script>
+    <script src="js/versor-zoom.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/bubble-globe.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
